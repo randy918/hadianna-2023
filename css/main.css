@@ -550,20 +550,20 @@ img {
     transition: 0.3s;
   }
   * *::before,
-* *::after {
+  * *::after {
     box-sizing: border-box;
     border: none;
   }
   * body,
-* h1,
-* h2,
-* h3,
-* h4,
-* p,
-* figure,
-* blockquote,
-* dl,
-* dd {
+  * h1,
+  * h2,
+  * h3,
+  * h4,
+  * p,
+  * figure,
+  * blockquote,
+  * dl,
+  * dd {
     margin: 0;
   }
   @font-face {

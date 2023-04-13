@@ -1,7 +1,7 @@
+@charset "UTF-8";
 * {
   border-radius: 0.25rem;
   transition: 0.3s;
-  scroll-behavior: smooth;
 }
 * *::before,
 * *::after {
@@ -45,14 +45,6 @@
   font-weight: normal;
   font-style: normal;
 }
-.logo__1 {
-  display: block;
-}
-
-.logo__2 {
-  display: none;
-}
-
 h1 {
   font-family: "palatino_lt_stdbold";
   font-size: 6vw;
@@ -78,11 +70,12 @@ h3 {
 
 h5 {
   font-family: "palatino_lt_stdroman";
-  font-size: 2.25vw;
+  font-size: 4vw;
   font-weight: 300;
-  color: black;
+  color: white;
   padding-top: 0;
-  margin-top: 2vw;
+  margin-top: 1vw;
+  margin-bottom: 3vw;
 }
 
 h6 {
@@ -90,7 +83,6 @@ h6 {
   font-size: 1.5vw;
   font-weight: 300;
   color: black;
-  opacity: 0.7;
   padding-top: 0vw;
   margin-top: 0;
   margin-bottom: 1.5vw;
@@ -102,35 +94,11 @@ h6 {
   text-decoration: none;
   font-size: 1.45vw;
   line-height: 2.75vw;
-  color: rgb(87, 182, 217);
+  color: rgb(161, 224, 249);
   margin-bottom: -1vw;
 }
 .mail-to:hover {
   color: white;
-}
-
-.instagram-container {
-  display: inline;
-  padding-bottom: 0;
-  line-height: 0;
-  margin-bottom: 0vw;
-  text-align: center;
-}
-
-.small-type {
-  font-size: 1vw;
-}
-
-.small-type:hover {
-  font-color: white;
-}
-
-.instagram {
-  display: inline;
-  width: 6vw;
-  padding-top: 1vw;
-  margin-bottom: 0vw;
-  padding-left: 2vw;
 }
 
 .papa {
@@ -147,6 +115,7 @@ body {
   justify-content: center;
   align-items: center;
   margin: 0 auto;
+  width: min(1300px, 80% + 100px);
   min-width: 0;
   caret-color: transparent;
 }
@@ -155,9 +124,22 @@ body::-webkit-scrollbar {
   width: 12px;
 }
 
+.grid__container {
+  display: grid;
+  width: 95vw;
+  flex-flow: row;
+  gap: 1.75vw;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 0.25fr 0.75fr 1fr 2.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.25fr 0.25fr 0.25fr 0.25fr;
+  height: 91vh;
+  margin: 2rem;
+  grid-template-areas: "header header" "display display" "welcome welcome" "subhead subhead" "portfolio-df-hb portfolio-df-wf" "subhead2 subhead2" "portfolio-f-p portfolio-f-bb" "portfolio-f-c portfolio-f-m" "escapes escapes" "portfolio-lt portfolio-gci" "managed managed" "bye bye";
+  align-items: start;
+  justify-content: center;
+}
+
 .grid__item {
   background-color: rgb(87, 182, 217);
-  display: inline-block;
 }
 
 .grid__header {
@@ -165,30 +147,18 @@ body::-webkit-scrollbar {
   background-color: black;
   padding-top: 3vw;
   padding-bottom: 1.5vw;
-  margin-top: 8vw;
-  margin-left: 10vw;
-  margin-right: 10vw;
-  margin-bottom: 2vw;
-  width: 79vw;
 }
 
 .grid__display {
   grid-area: display;
   -o-object-fit: contain;
      object-fit: contain;
-  width: 79vw;
+  width: 100%;
   height: 100%;
-  margin-left: 10vw;
-  margin-right: 7vw;
-  margin-bottom: 2vw;
 }
 
 .grid__subhead {
   grid-area: subhead;
-  width: 79vw;
-  margin-left: 10vw;
-  margin-right: 7vw;
-  margin-bottom: 2vw;
 }
 
 .grid__subhead2 {
@@ -202,10 +172,8 @@ body::-webkit-scrollbar {
 .grid__welcome {
   grid-area: welcome;
   background-image: url("/./img/10-01-22.1901-hadianna-black-welcome.png");
-  width: 79vw;
+  width: 76vw;
   height: 23vw;
-  left: 10vw;
-  margin-bottom: 2vw;
   background-position: right;
   background-repeat: no-repeat;
   background-size: cover;
@@ -252,40 +220,25 @@ body::-webkit-scrollbar {
 }
 
 .grid__managed {
+  grid-area: managed;
   background-color: black;
   padding-top: 2vw;
-  width: 79vw;
-  margin-left: 10vw;
-  margin-right: 9vw;
-  margin-bottom: 2vw;
+}
+
+.grid__sidebar {
+  grid-area: sidebar;
+  min-width: 100px;
+  text-align: center;
 }
 
 .grid__portfolio-gci {
   grid-area: portfolio-gci;
-  padding-bottom: 0vw;
 }
-.grid__portfolio-pa-tt {
-  grid-area: portfolio-pa-tt;
-  width: 38.5vw;
-  margin-left: 10vw;
-  display: inline-block;
-  margin-bottom: 2vw;
+.grid__portfolio-df-hb {
+  grid-area: portfolio-df-hb;
 }
-.grid__portfolio-pa-nah {
-  grid-area: portfolio-pa-nah;
-  width: 38.5vw;
-  margin-left: 1.25vw;
-  margin-right: 5vw;
-  display: inline-block;
-}
-.grid__portfolio-pa-tr {
-  grid-area: portfolio-pa-tr;
-  grid-area: portfolio-pa-tt;
-  width: 36.55vw;
-  margin-left: 30vw;
-  margin-top: 2.25vw;
-  margin-bottom: 2.25vw;
-  display: inline-block;
+.grid__portfolio-df-wf {
+  grid-area: portfolio-df-wf;
 }
 .grid__portfolio-f-p {
   grid-area: portfolio-f-p;
@@ -301,9 +254,6 @@ body::-webkit-scrollbar {
 }
 .grid__portfolio-lt {
   grid-area: portfolio-lt;
-}
-.grid__portfolio-filler {
-  grid-area: portfolio-filler;
 }
 
 .grid__footer {
@@ -332,8 +282,7 @@ h4 {
 
 h8 {
   font-family: "palatino_lt_stdroman";
-  font-size: 1.5vw;
-  line-height: 1.8;
+  font-size: 1.75vw;
   color: white;
 }
 
@@ -347,11 +296,6 @@ h8 {
   line-height: 1.25;
 }
 
-.h99 {
-  color: black;
-  font-size: 2vw;
-}
-
 .h10 {
   font-family: "palatino_lt_stdroman";
   font-size: 1.75vw;
@@ -363,10 +307,11 @@ h8 {
 }
 
 .h11 {
+  display: flex;
   font-family: "palatino_lt_stdroman";
-  margin-right: 4vw;
   font-size: 1.75vw;
-  color: black;
+  text-align: center;
+  color: white;
 }
 
 a.button1 {
@@ -377,45 +322,41 @@ a.button1 {
   border-radius: 0.5em;
   box-sizing: border-box;
   text-decoration: none;
+  font-family: "palatino_lt_stdroman";
+  font-size: 2vw;
+  line-height: 1.25;
   width: 66vw;
-  height: 7vw;
-  background-image: url("/./img/10-17-22.1929-base-filler-yellow.png");
-  background-position: center;
-  background-size: cover;
-  margin-left: 7vw;
+  background-color: rgb(87, 182, 217);
+  color: black;
+  margin-left: 5vw;
   margin-bottom: 2.5vw;
-  margin-top: 2vw;
   text-align: center;
   transition: all 0.4s;
 }
+
 a.button1:hover {
   color: black;
-  background-image: url("/./img/10-17-22.1929-base-filler.png");
+  background-color: rgb(255, 133, 115);
 }
 
 @media all and (max-width: 30em) {
-  a.button1 {
+   a.button1 {
     display: block;
     margin: 0.4em auto;
   }
 }
-.black {
-  color: black;
-}
-
 .trythis {
   padding-left: 2vw;
-  padding-right: 29vw;
   padding-top: 0;
   margin-top: -8vw;
   float: left;
 }
 
 .has-dropcap:first-letter {
-  font-size: 6.5vw;
+  font-size: 6vw;
   line-height: 0.5;
   float: left;
-  margin: 0.2em 0.1em 0.1em 0;
+  margin: 0.25em 0.1em 0.1em 0;
 }
 
 .doit {
@@ -447,15 +388,6 @@ a.button1:hover {
 
 .visit2:hover {
   filter: brightness(0) invert(1);
-}
-
-ul {
-  text-align: center;
-}
-
-li {
-  display: inline;
-  padding: 0 10px 0 0;
 }
 
 .flex__display {
@@ -547,7 +479,7 @@ img {
 
 .swiper {
   height: 100%;
-  background-color: rgb(75, 160, 192);
+  background-color: rgb(96, 176, 203);
 }
 
 .swiper-wrapper {
@@ -560,7 +492,7 @@ img {
 }
 
 .swiper-slide img {
-  background-color: rgb(87, 182, 217);
+  background-color: red;
   height: 100%;
   -o-object-fit: cover;
   object-fit: cover;
@@ -581,7 +513,7 @@ img {
 
 #swiper-1 .swiper-pagination-bullet-active {
   opacity: 1;
-  background-color: rgb(87, 182, 217);
+  background-color: red;
 }
 
 .swiper-title-1 {
@@ -612,15 +544,10 @@ img {
   color: white;
 }
 
-.pair {
-  display: inline-block;
-}
-
 @media only screen and (max-width: 600px) {
   * {
     border-radius: 0.25rem;
     transition: 0.3s;
-    scroll-behavior: smooth;
   }
   * *::before,
   * *::after {
@@ -663,12 +590,6 @@ img {
     font-weight: normal;
     font-style: normal;
   }
-  .logo__2 {
-    display: block;
-  }
-  .logo__1 {
-    display: none;
-  }
   h1 {
     font-family: "palatino_lt_stdbold";
     font-size: 6vw;
@@ -676,78 +597,48 @@ img {
   }
   h2 {
     font-family: "palatino_lt_stdroman";
-    font-size: 4vw;
+    font-size: 3vw;
     font-weight: 100;
     color: black;
   }
   h3 {
     font-family: "palatino_lt_stdroman";
-    font-size: 6vw;
+    font-size: 2.5vw;
     font-weight: 700;
     color: black;
-    letter-spacing: -0.2vw;
     text-align: center;
     line-height: 1;
-    padding-top: 3vw;
+    padding-top: 1vw;
   }
   h5 {
     font-family: "palatino_lt_stdroman";
-    font-size: 2.25vw;
+    font-size: 4vw;
     font-weight: 300;
-    color: black;
+    color: white;
     padding-top: 0;
-    margin-top: 2vw;
+    margin-top: 1vw;
+    margin-bottom: 3vw;
   }
   h6 {
     font-family: "palatino_lt_stdroman";
-    font-size: 3.5vw;
+    font-size: 1.5vw;
     font-weight: 300;
     color: black;
-    opacity: 0.7;
     padding-top: 0vw;
     margin-top: 0;
     margin-bottom: 1.5vw;
     text-align: center;
-  }
-  .line {
-    padding-top: 2vw;
-  }
-  .sticky {
-    position: sticky;
-    top: 0;
-    z-index: 999;
   }
   .mail-to {
     font-family: "palatino_lt_stdroman";
     text-decoration: none;
     font-size: 1.45vw;
     line-height: 2.75vw;
-    padding-top: 1vw;
-    color: rgb(87, 182, 217);
+    color: rgb(161, 224, 249);
     margin-bottom: -1vw;
   }
   .mail-to:hover {
     color: white;
-  }
-  .instagram-container {
-    display: inline;
-    padding-bottom: 0;
-    line-height: 0;
-    margin-bottom: 0vw;
-    text-align: center;
-  }
-  .small-type {
-    font-size: 1vw;
-  }
-  .small-type:hover {
-    font-color: white;
-  }
-  .instagram {
-    display: inline;
-    width: 6vw;
-    padding-top: 1vw;
-    margin-bottom: 0vw;
-    padding-left: 2vw;
   }
   .papa {
     margin-top: -0.5vw;
@@ -756,51 +647,50 @@ img {
     fill: black;
   }
   body {
-    background-color: rgb(87, 182, 217);
+    background-color: rgb(75, 160, 192);
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 0 auto;
+    width: min(1300px, 80% + 100px);
     min-width: 0;
     caret-color: transparent;
-    scroll-behavior: smooth;
   }
   body::-webkit-scrollbar {
     width: 0.25px;
   }
+  .grid__container {
+    display: grid;
+    width: 95vw;
+    flex-flow: row;
+    gap: 1.75vw;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.25fr 0.75fr 1fr 2.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.25fr 0.25fr 0.25fr 0.25fr;
+    height: 91vh;
+    margin: 2rem;
+    grid-template-areas: "header" "display" "welcome" "subhead" "portfolio-df-hb" "portfolio-df-wf" "subhead2" "portfolio-f-p" "portfolio-f-bb" "portfolio-f-c" "portfolio-f-m" "escapes" "portfolio-lt" "portfolio-gci" "managed" "bye";
+    align-items: start;
+    justify-content: center;
+  }
   .grid__item {
     background-color: rgb(87, 182, 217);
-    display: inline-block;
   }
   .grid__header {
     grid-area: header;
     background-color: black;
-    margin-top: 0vw;
-    padding-bottom: 1.5vw;
-    padding-top: 3.5vw;
-    border-radius: 0rem 0rem 0.25rem 0.25rem;
-    margin-bottom: 6vw;
+    padding-top: 3vw;
     width: 100vw;
-    box-shadow: rgba(0, 0, 0, 0.3) 0px 20px 25px -5px, rgba(0, 0, 0, 0.3) 0px 10px 10px -5px;
+    padding-bottom: 1.5vw;
   }
   .grid__display {
     grid-area: display;
     -o-object-fit: contain;
        object-fit: contain;
-    width: 100vw;
+    width: 100%;
     height: 100%;
-    margin-left: 10vw;
-    margin-right: 7vw;
-    margin-bottom: 6vw;
   }
   .grid__subhead {
     grid-area: subhead;
-    width: 100vw;
-    height: 10vw;
-    margin-left: 10vw;
-    margin-right: 7vw;
-    margin-bottom: 2vw;
-    padding-top: 1vw;
   }
   .grid__subhead2 {
     grid-area: subhead2;
@@ -811,20 +701,17 @@ img {
   .grid__welcome {
     grid-area: welcome;
     background-image: url("/./img/10-01-22.1901-hadianna-black-welcome.png");
-    width: 100vw;
-    height: 49vw;
-    left: 10vw;
-    margin-bottom: 2vw;
-    background-position: 85% 50%;
+    width: 76vw;
+    height: 23vw;
+    background-position: right;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
     padding-top: 3vw;
-    margin-bottom: 6vw;
   }
   .grid__bye {
     grid-area: bye;
-    background-color: rgb(87, 182, 217);
+    background-color: rgb(75, 160, 192);
   }
   .flex__welcome {
     position: relative;
@@ -854,35 +741,23 @@ img {
     left: 0vw;
   }
   .grid__managed {
+    grid-area: managed;
     background-color: black;
     padding-top: 2vw;
-    width: 100.5vw;
-    margin-top: 1.75vw;
-    margin-left: 10vw;
-    margin-right: 9vw;
-    margin-bottom: 2vw;
+  }
+  .grid__sidebar {
+    grid-area: sidebar;
+    min-width: 100px;
+    text-align: center;
   }
   .grid__portfolio-gci {
     grid-area: portfolio-gci;
-    padding-bottom: 0vw;
   }
-  .grid__portfolio-pa-tt {
-    grid-area: portfolio-pa-tt;
-    width: 100vw;
-    margin-left: 10vw;
-    display: inline-block;
+  .grid__portfolio-df-hb {
+    grid-area: portfolio-df-hb;
   }
-  .grid__portfolio-pa-nah {
-    grid-area: portfolio-pa-tt;
-    width: 100vw;
-    margin-left: 10vw;
-    display: inline-block;
-  }
-  .grid__portfolio-pa-tr {
-    grid-area: portfolio-pa-tt;
-    width: 100vw;
-    margin-left: 10vw;
-    display: inline-block;
+  .grid__portfolio-df-wf {
+    grid-area: portfolio-df-wf;
   }
   .grid__portfolio-f-p {
     grid-area: portfolio-f-p;
@@ -898,9 +773,6 @@ img {
   }
   .grid__portfolio-lt {
     grid-area: portfolio-lt;
-  }
-  .grid__portfolio-filler {
-    grid-area: portfolio-filler;
   }
   .grid__footer {
     grid-area: footer;
@@ -924,13 +796,12 @@ img {
   }
   h8 {
     font-family: "palatino_lt_stdroman";
-    font-size: 2.35vw;
-    line-height: 1.65;
+    font-size: 1.75vw;
     color: white;
   }
   .h9 {
     font-family: "palatino_lt_stdroman";
-    font-size: 5vw;
+    font-size: 3vw;
     text-align: center;
     color: white;
     padding-left: 4vw;
@@ -939,19 +810,19 @@ img {
   }
   .h10 {
     font-family: "palatino_lt_stdroman";
-    font-size: 4vw;
+    font-size: 1.75vw;
     text-align: center;
-    color: rgb(253, 254, 199);
-    padding-left: 4vw;
-    padding-right: 4vw;
+    color: white;
+    padding-left: 0vw;
     padding-bottom: 2vw;
-    padding-top: 2vw;
+    padding-top: vw;
   }
   .h11 {
+    display: flex;
     font-family: "palatino_lt_stdroman";
-    margin-right: 4vw;
-    font-size: 2.75vw;
-    color: black;
+    font-size: 1.75vw;
+    text-align: center;
+    color: white;
   }
   a.button1 {
     display: inline-block;
@@ -961,54 +832,42 @@ img {
     border-radius: 0.5em;
     box-sizing: border-box;
     text-decoration: none;
+    font-family: "palatino_lt_stdroman";
+    font-size: 2vw;
+    line-height: 1.25;
     width: 66vw;
-    height: 7vw;
-    background-image: url("/./img/10-17-22.1929-base-filler-yellow.png");
-    background-position: center;
-    background-size: cover;
+    background-color: rgb(87, 182, 217);
+    color: black;
     margin-left: 5vw;
     margin-bottom: 2.5vw;
-    margin-top: 2vw;
     text-align: center;
     transition: all 0.4s;
   }
   a.button1:hover {
     color: black;
-    background-image: url("/./img/10-17-22.1929-base-filler.png");
+    background-color: rgb(255, 133, 115);
   }
 }
 @media only screen and (max-width: 600px) and (max-width: 30em) {
-  a.button1 {
+   a.button1 {
     display: block;
     margin: 0.4em auto;
   }
 }
 @media only screen and (max-width: 600px) {
-  .black {
-    color: black;
-  }
-}
-@media only screen and (max-width: 600px) {
-  .blacker {
-    color: black;
-  }
-}
-@media only screen and (max-width: 600px) {
   .trythis {
-    padding-left: 4vw;
-    padding-right: 29vw;
+    padding-left: 2vw;
     padding-top: 0;
     margin-top: -8vw;
     float: left;
-    font-size: 3vw;
   }
 }
 @media only screen and (max-width: 600px) {
   .has-dropcap:first-letter {
-    font-size: 11vw;
-    line-height: 0.8;
+    font-size: 6vw;
+    line-height: 0.5;
     float: left;
-    margin: 0em 0.1em 0.1em 0;
+    margin: 0.25em 0.1em 0.1em 0;
   }
 }
 @media only screen and (max-width: 600px) {
@@ -1026,7 +885,6 @@ img {
     padding-bottom: 2vw;
     display: block;
     margin: auto;
-    margin-bottom: 3vw;
   }
 }
 @media only screen and (max-width: 600px) {
@@ -1046,17 +904,6 @@ img {
 @media only screen and (max-width: 600px) {
   .visit2:hover {
     filter: brightness(0) invert(1);
-  }
-}
-@media only screen and (max-width: 600px) {
-  ul {
-    text-align: center;
-  }
-}
-@media only screen and (max-width: 600px) {
-  li {
-    display: inline;
-    padding: 0 10px 0 0;
   }
 }
 @media only screen and (max-width: 600px) {
@@ -1164,7 +1011,7 @@ img {
 @media only screen and (max-width: 600px) {
   .swiper {
     height: 100%;
-    background-color: rgb(87, 182, 217);
+    background-color: rgb(96, 176, 203);
   }
 }
 @media only screen and (max-width: 600px) {
@@ -1180,7 +1027,7 @@ img {
 }
 @media only screen and (max-width: 600px) {
   .swiper-slide img {
-    background-color: rgb(87, 182, 217);
+    background-color: red;
     height: 100%;
     -o-object-fit: cover;
     object-fit: cover;
@@ -1204,7 +1051,7 @@ img {
 @media only screen and (max-width: 600px) {
   #swiper-1 .swiper-pagination-bullet-active {
     opacity: 1;
-    background-color: rgb(87, 182, 217);
+    background-color: red;
   }
 }
 @media only screen and (max-width: 600px) {
@@ -1238,30 +1085,4 @@ img {
     left: 2vw;
     color: white;
   }
-}
-@media only screen and (max-width: 600px) {
-  .pair {
-    display: inline-block;
-  }
-}
-@media only screen and (max-width: 600px) {
-  .h88 {
-    font-size: 2.5vw;
-    padding-bottom: 2vw;
-  }
-}
-@media only screen and (max-width: 600px) {
-  .go-to-top {
-    background-image: url("/./img/10-28-22.0958-blue-goto.png");
-    background-size: cover;
-    border-radius: 50%;
-    border: none;
-    bottom: 4vw;
-    box-shadow: rgba(0, 0, 0, 0.4) 0px 20px 25px -5px, rgba(0, 0, 0, 0.4) 0px 10px 10px -5px;
-    height: 60px;
-    position: fixed;
-    right: 6vw;
-    width: 60px;
-    z-index: 9999;
-  }
-}/*# sourceMappingURL=main-rewrite.css.map */
+}/*# sourceMappingURL=main_20230105205246.css.map */
