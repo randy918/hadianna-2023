@@ -516,6 +516,10 @@ img {
   background-color: red;
 }
 
+.my-inline {
+  display: inline-block;
+}
+
 .swiper-title-1 {
   position: absolute;
   top: 0;
