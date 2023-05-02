@@ -380,19 +380,6 @@ a.button1:hover {
   background-image: url("/./img/10-17-22.1929-base-filler-yellow.png");
 }
 
-.my video-container {
-  position: relative;
-  overflow: hiddens;
-  padding-top: 56.25%;
-}
-
-.my-iframe {
-  position: absolute;
-  top: 335vw;
-  left: 4.5vw;
-  height: 34vw;
-}
-
 @media all and (max-width: 30em) {
   a.button1 {
     display: block;
