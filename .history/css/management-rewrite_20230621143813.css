@@ -421,7 +421,7 @@ a.button1:hover {
 }
 
 .visit:hover {
-  filter: opacity(.25);
+  filter: brightness(0) invert(1);
 }
 
 .visit2 {
@@ -459,6 +459,7 @@ li {
 }
 
 .flex__subhead {
+  margin-top: 1.5vw;
   padding-top: 1.5vw;
   padding-bottom: 0.5vw;
 }
@@ -1001,7 +1002,7 @@ img {
 }
 @media only screen and (max-width: 600px) {
   .visit:hover {
-    filter: brightness(.5) invert(1);
+    filter: brightness(0) invert(1);
   }
 }
 @media only screen and (max-width: 600px) {

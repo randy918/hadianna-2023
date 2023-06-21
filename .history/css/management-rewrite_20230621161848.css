@@ -421,7 +421,7 @@ a.button1:hover {
 }
 
 .visit:hover {
-  filter: opacity(.25);
+  filter: opacity(.5);
 }
 
 .visit2 {

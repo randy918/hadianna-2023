@@ -421,7 +421,7 @@ a.button1:hover {
 }
 
 .visit:hover {
-  filter: opacity(.25);
+  filter: brightness(0) invert(1);
 }
 
 .visit2 {

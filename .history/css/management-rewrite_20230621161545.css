@@ -421,7 +421,7 @@ a.button1:hover {
 }
 
 .visit:hover {
-  filter: opacity(.25);
+  color: red
 }
 
 .visit2 {
@@ -459,6 +459,7 @@ li {
 }
 
 .flex__subhead {
+  padding-top: 1.5vw;
   padding-top: 1.5vw;
   padding-bottom: 0.5vw;
 }
@@ -776,7 +777,7 @@ img {
     margin-left: 10vw;
     margin-right: 7vw;
     margin-bottom: 2vw;
-    padding-top: 1vw;
+    padding-top: 10vw;
   }
   .grid__subhead2 {
     grid-area: subhead2;
@@ -1001,7 +1002,7 @@ img {
 }
 @media only screen and (max-width: 600px) {
   .visit:hover {
-    filter: brightness(.5) invert(1);
+    filter: brightness(0) invert(1);
   }
 }
 @media only screen and (max-width: 600px) {
