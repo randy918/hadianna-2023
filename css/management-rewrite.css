@@ -253,6 +253,13 @@ body::-webkit-scrollbar {
   margin-bottom: 2vw;
 }
 
+.space-1 {
+  background: transparent;
+  color: transparent;
+  margin: 0;
+  height: 2vw;
+}
+
 .grid__portfolio-gci {
   grid-area: portfolio-gci;
   padding-bottom: 0vw;
