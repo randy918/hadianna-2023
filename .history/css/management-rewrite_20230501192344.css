@@ -974,8 +974,6 @@ img {
   .black {
     color: black;
   }
-}
-@media only screen and (max-width: 600px) {
   .trythis {
     padding-left: 4vw;
     padding-right: 43vw;
@@ -984,24 +982,18 @@ img {
     float: left;
     font-size: 3vw;
   }
-}
-@media only screen and (max-width: 600px) {
   .has-dropcap:first-letter {
     font-size: 11vw;
     line-height: 0.55;
     float: left;
     margin: 0.2em 0.1em 0.1em 0;
   }
-}
-@media only screen and (max-width: 600px) {
   .doit {
     position: absolute;
     top: 0;
     left: 2vw;
     z-index: 1000;
   }
-}
-@media only screen and (max-width: 600px) {
   .visit {
     margin-top: -3vw;
     width: 25%;
@@ -1010,13 +1002,9 @@ img {
     margin: auto;
     margin-bottom: 3vw;
   }
-}
-@media only screen and (max-width: 600px) {
   .visit:hover {
     filter: brightness(0) invert(1);
   }
-}
-@media only screen and (max-width: 600px) {
   .visit2 {
     margin-top: -3vw;
     width: 25%;
@@ -1024,24 +1012,16 @@ img {
     display: block;
     margin: auto;
   }
-}
-@media only screen and (max-width: 600px) {
   .visit2:hover {
     filter: brightness(0) invert(1);
   }
-}
-@media only screen and (max-width: 600px) {
   ul {
     text-align: center;
   }
-}
-@media only screen and (max-width: 600px) {
   li {
     display: inline;
     padding: 0 10px 0 0;
   }
-}
-@media only screen and (max-width: 600px) {
   .flex__display {
     display: flex;
     flex-direction: row;
@@ -1054,39 +1034,27 @@ img {
     overflow: hidden;
     justify-content: space-around;
   }
-}
-@media only screen and (max-width: 600px) {
   .flex__subhead {
     padding-top: 1.5vw;
     padding-bottom: 0.5vw;
   }
-}
-@media only screen and (max-width: 600px) {
   .flex__subhead2 {
     padding-top: 2vw;
     padding-bottom: 0vw;
   }
-}
-@media only screen and (max-width: 600px) {
   .flex__escapes {
     padding-top: 2vw;
     padding-bottom: 0vw;
   }
-}
-@media only screen and (max-width: 600px) {
   .flex__welcome {
     padding-top: 2vw;
     padding-bottom: 0vw;
     color: black;
     position: relative;
   }
-}
-@media only screen and (max-width: 600px) {
   .flex__managed {
     color: white;
   }
-}
-@media only screen and (max-width: 600px) {
   .welcome-background {
     background-image: url("/./img/10-01-22.1901-hadianna-black-welcome.png");
     background-position: center;
@@ -1094,28 +1062,18 @@ img {
     background-repeat: no-repeat;
     background-size: cover;
   }
-}
-@media only screen and (max-width: 600px) {
   .img-container {
     position: relative;
   }
-}
-@media only screen and (max-width: 600px) {
   .img-container img {
     transition: all 0.5s ease;
   }
-}
-@media only screen and (max-width: 600px) {
   a {
     position: relative;
   }
-}
-@media only screen and (max-width: 600px) {
   .img-container img:first-child {
     position: relative;
   }
-}
-@media only screen and (max-width: 600px) {
   .img-container img:last-child {
     position: absolute;
     z-index: 1;
@@ -1123,18 +1081,12 @@ img {
     left: 0;
     opacity: 0;
   }
-}
-@media only screen and (max-width: 600px) {
   .img-container:hover img:last-child {
     opacity: 1;
   }
-}
-@media only screen and (max-width: 600px) {
   img {
     border-radius: 0.25rem;
   }
-}
-@media only screen and (max-width: 600px) {
   .text-a {
     position: absolute;
     top: 52vw;
@@ -1142,25 +1094,17 @@ img {
     font-size: 3.5vw;
     z-index: 100;
   }
-}
-@media only screen and (max-width: 600px) {
   .swiper {
     height: 100%;
     background-color: rgb(253, 254, 199);
   }
-}
-@media only screen and (max-width: 600px) {
   .swiper-wrapper {
     position: relative;
     text-align: center;
   }
-}
-@media only screen and (max-width: 600px) {
   .swiper-slide {
     width: 100% !important;
   }
-}
-@media only screen and (max-width: 600px) {
   .swiper-slide img {
     background-color: rgb(253, 254, 199);
     height: 100%;
@@ -1171,68 +1115,48 @@ img {
     width: 100%;
     border-radius: 0.125rem;
   }
-}
-@media only screen and (max-width: 600px) {
   #swiper-1 .swiper-pagination {
     bottom: 1vw;
   }
-}
-@media only screen and (max-width: 600px) {
   #swiper-1 .swiper-pagination-bullet {
     opacity: 1;
     background-color: white;
   }
-}
-@media only screen and (max-width: 600px) {
   #swiper-1 .swiper-pagination-bullet-active {
     opacity: 1;
     background-color: red;
   }
-}
-@media only screen and (max-width: 600px) {
   .swiper-title-1 {
     position: absolute;
     top: 0;
     left: 2vw;
     color: white;
   }
-}
-@media only screen and (max-width: 600px) {
   .swiper-title-2 {
     position: absolute;
     top: 0;
     left: 2vw;
     color: white;
   }
-}
-@media only screen and (max-width: 600px) {
   .swiper-title-3 {
     position: absolute;
     top: 0;
     left: 2vw;
     color: white;
   }
-}
-@media only screen and (max-width: 600px) {
   .swiper-title-4 {
     position: absolute;
     top: 0;
     left: 2vw;
     color: white;
   }
-}
-@media only screen and (max-width: 600px) {
   .pair {
     display: inline-block;
   }
-}
-@media only screen and (max-width: 600px) {
   .h88 {
     font-size: 2.5vw;
     padding-bottom: 2vw;
   }
-}
-@media only screen and (max-width: 600px) {
   .go-to-top {
     background-image: url("/./img/10-28-22.0958-yellow-goto.png");
     background-size: cover;
