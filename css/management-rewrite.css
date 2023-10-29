@@ -387,6 +387,10 @@ a.button1:hover {
   background-image: url("/./img/10-17-22.1929-base-filler-yellow.png");
 }
 
+.background--color__yurt {
+  background-color: rgb(146, 98, 80);
+}
+
 @media all and (max-width: 30em) {
   a.button1 {
     display: block;
@@ -1165,4 +1169,7 @@ img {
     width: 60px;
     z-index: 9999;
   }
+}
+.background--color__yurt {
+  background-color: rgb(146, 98, 80);
 }/*# sourceMappingURL=management-rewrite.css.map */
