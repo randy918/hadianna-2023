@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,300;0,400;0,700;0,900;1,400;1,700;1,900&display=swap");
 * {
   border-radius: 0.25rem;
   transition: 0.3s;
@@ -941,7 +942,6 @@ img {
     font-family: "palatino_lt_stdroman";
     font-size: 4vw;
     text-align: center;
-    color: rgb(253, 254, 199);
     padding-left: 4vw;
     padding-right: 4vw;
     padding-bottom: 2vw;
