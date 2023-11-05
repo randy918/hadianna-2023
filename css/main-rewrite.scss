@@ -39,6 +39,9 @@ $colors: (bg: rgba(55, 66, 76, 1),
     hadiannaSalmonFour: rgb(255, 133, 115),
     hadiannaYellowOne: rgb(234, 235, 183),
     hadiannaYellowFour: rgb(253, 254, 199),
+    pineywoodBackgroundOne: rgb (193, 185, 168), 
+    pineywoodTypeOne: rgb (82, 78, 68), 
+    pineywoodObjectOne: rgb (110,  112,  114), 
 );
 
 @function getColor($color-name) {
