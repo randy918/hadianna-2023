@@ -257,7 +257,7 @@ body::-webkit-scrollbar {
 }
 
 .background--color__black {
-  background-color: black;
+  background-color: rgb(193, 185, 168);
 }
 
 .font--color__white {

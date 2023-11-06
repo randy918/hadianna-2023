@@ -409,7 +409,7 @@ body::-webkit-scrollbar {
 }
 
 .background--color__black {
-    background-color: black;
+    background-color: getColor(pineyBackgroundOne);
 }
 
 .font--color__white {
