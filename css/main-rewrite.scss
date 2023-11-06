@@ -413,7 +413,10 @@ body::-webkit-scrollbar {
 }
 
 .font--color__white {
-    color: white;
+    color:getColor(pineyTypeOne);
+    font-size: 1em;
+    font-weight: 400;
+    font-family: "Fira Sans";
 }
 
 .invisible {}
@@ -688,7 +691,8 @@ li {
 .flex__subhead {
 
     padding-top: 1.5vw;
-    padding-bottom: 0.5vw;
+    padding-bottom: 0vw;
+    margin-bottom: -1.5vw;
 }
 
 .flex__subhead2 {
