@@ -209,8 +209,8 @@ h6 {
 .mail-to {
     font-family: "Fira Sans";
     text-decoration: none;
-    font-size: 1.45vw;
-    margin:  auto;
+    font-size: 2.5vw;
+    margin-left: 32vw;
     line-height: 2.75vw;
     color: getColor(pineyObjectOne);
     margin-bottom: -1vw;
@@ -288,7 +288,7 @@ body::-webkit-scrollbar {
     margin-left: 10vw;
     height: 100%;
     margin-right: 10vw;
-    margin-bottom: 2vw;
+    margin-bottom: 0vw;
     border-radius: .5vw;
     border-style: solid;
     border-width: .2vw;
@@ -889,7 +889,7 @@ h3 {
     //   opacity: 0.7;
     text-align: center;
     line-height: 1;
-    padding-top: 3vw;
+    padding-top: vw;
 }
 
 h5 {
@@ -941,10 +941,11 @@ h6 {
     font-family: "Fira Sans",  sans-serif;
     margin-right: 30vw;
     text-decoration: none;
-    font-size: 1.45vw;
+    font-size: 3.45vw;
+    margin-left: 36vw;
     line-height: 2.75vw;
-    color: getColor(hadiannaBlueFour);
-    margin-bottom: -1vw;
+    color: getColor(pineyTypeOne);
+    margin-bottom: 0vw;
 
     &:hover {
         color: white;
@@ -955,6 +956,7 @@ h6 {
     display: inline;
     padding-bottom: 0;
     line-height: 0;
+    margin-left: 3vw;
     margin-bottom: 0vw;
     text-align: center;
 }
