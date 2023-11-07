@@ -113,11 +113,12 @@ h6 {
 }
 
 .mail-to {
-  font-family: "palatino_lt_stdroman";
+  font-family: "Fira Sans";
   text-decoration: none;
   font-size: 1.45vw;
+  margin: auto;
   line-height: 2.75vw;
-  color: rgb(87, 182, 217);
+  color: rgb(110, 112, 114);
   margin-bottom: -1vw;
 }
 .mail-to:hover {
@@ -179,8 +180,8 @@ body::-webkit-scrollbar {
   grid-area: header;
   background-color: black;
   background-image: url("/./img-piney/11-05-23-1201-1600x556-piney-logo-main.jpg");
-  background-size: cover;
-  padding-top: 24vw;
+  background-size: contain;
+  padding-top: 26vw;
   padding-bottom: 1.5vw;
   margin-top: 8vw;
   margin-left: 10vw;
@@ -360,7 +361,7 @@ h4 {
   text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.5), 0px 8px 13px rgba(0, 0, 0, 0.1), 0px 18px 23px rgba(0, 0, 0, 0.1);
 }
 
-h8 {
+.h8 {
   font-family: "palatino_lt_stdroman";
   font-size: 1.5vw;
   line-height: 1.8;
@@ -668,7 +669,7 @@ img {
   }
   h3 {
     font-family: "Fira Sans";
-    font-size: 2.5vw;
+    font-size: 7vw;
     font-weight: 700;
     color: rgb(193, 185, 168);
     text-align: center;
@@ -685,7 +686,7 @@ img {
   }
   h6 {
     font-family: "Fira Sans";
-    font-size: 1.65vw;
+    font-size: 3vw;
     font-style: italic;
     font-weight: 400;
     color: white;
@@ -704,7 +705,8 @@ img {
     font-size: 2vw;
   }
   .mail-to {
-    font-family: "palatino_lt_stdroman";
+    font-family: "Fira Sans", sans-serif;
+    margin-right: 30vw;
     text-decoration: none;
     font-size: 1.45vw;
     line-height: 2.75vw;
@@ -766,7 +768,6 @@ img {
     margin-top: 0vw;
     height: 34vw;
     margin: auto;
-    margin-bottom: 2vw;
     border-radius: 0.5vw;
     border-style: solid;
     border-width: 0.2vw;
@@ -803,7 +804,7 @@ img {
     padding-top: 0vw;
     padding-bottom: 1.5vw;
     height: 50%;
-    margin-top: 0vw;
+    margin-top: 6vw;
     margin-bottom: 2vw;
     border-radius: 0.5vw;
     border-style: solid;
@@ -863,14 +864,14 @@ img {
     width: 100vw;
     margin-left: 10vw;
     display: inline-block;
-    margin-bottom: 2vw;
+    margin-bottom: 8vw;
   }
   .grid__portfolio-pa-nah {
-    grid-area: portfolio-pa-nah;
+    grid-area: portfolio-pa-tt;
     width: 100vw;
-    margin-left: 1.25vw;
-    margin-right: 5vw;
+    margin-left: 10vw;
     display: inline-block;
+    margin-bottom: 8vw;
   }
   .grid__portfolio-pa-tr {
     grid-area: portfolio-pa-tr;
