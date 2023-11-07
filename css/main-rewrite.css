@@ -125,6 +125,21 @@ h6 {
   color: white;
 }
 
+.phone-to {
+  font-family: "Fira Sans", sans-serif;
+  margin-right: 30vw;
+  text-decoration: none;
+  font-size: 2.5vw;
+  margin-left: 42vw;
+  margin-top: -1vw;
+  padding-top: 0vw;
+  color: rgb(110, 112, 114);
+  margin-bottom: 0vw;
+}
+.phone-to:hover {
+  color: white;
+}
+
 .instagram-container {
   display: inline;
   padding-bottom: 0;
@@ -715,6 +730,20 @@ img {
     margin-bottom: 0vw;
   }
   .mail-to:hover {
+    color: white;
+  }
+  .phone-to {
+    font-family: "Fira Sans", sans-serif;
+    margin-right: 30vw;
+    text-decoration: none;
+    font-size: 3.5vw;
+    margin-left: 50vw;
+    margin-top: -1vw;
+    padding-top: 0vw;
+    color: rgb(110, 112, 114);
+    margin-bottom: -2vw;
+  }
+  .phone-to:hover {
     color: white;
   }
   .instagram-container {
