@@ -674,7 +674,7 @@ img {
     color: rgb(193, 185, 168);
     text-align: center;
     line-height: 1;
-    padding-top: 1vw;
+    padding-top: 3vw;
   }
   h5 {
     font-family: "palatino_lt_stdroman";
@@ -1011,7 +1011,7 @@ img {
     margin-top: -3vw;
     width: 50%;
     border-radius: 0.5vw;
-    padding-bottom: 2vw;
+    padding-bottom: 4vw;
     display: block;
     margin: auto;
   }
