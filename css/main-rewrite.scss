@@ -1014,8 +1014,8 @@ body::-webkit-scrollbar {
     padding-top: 3vw;
     padding-bottom: 1.5vw;
     margin-top: 0vw;
-    height: 38vw;
-    margin-right: 10vw;
+    height: 34vw;
+    margin: auto;
     margin-bottom: 2vw;
     border-radius: .5vw;
     border-style: solid;
@@ -1031,19 +1031,18 @@ body::-webkit-scrollbar {
     // padding: 2vw;
     //    max-height: 330px;
     object-fit: contain;
-    width: 79vw;
+    width: 100vw;
     height: 100%;
     margin-left: 10vw;
     margin-right: 7vw;
-    margin-bottom: 2vw;
+    margin-bottom: 6vw;
 }
 
 .grid__subhead {
     grid-area: subhead;
-    width: 79vw;
-
-    margin-left: 10vw;
-    margin-right: 7vw;
+    width: 100vw;
+height: 10vw;
+    margin: auto;
     margin-bottom: 2vw;
 }
 
@@ -1144,7 +1143,7 @@ body::-webkit-scrollbar {
 
     &-pa-tt {
         grid-area: portfolio-pa-tt;
-        width: 38.5vw;
+        width: 100vw;
         margin-left: 10vw;
         display: inline-block;
         margin-bottom: 2vw;
@@ -1152,7 +1151,7 @@ body::-webkit-scrollbar {
 
     &-pa-nah {
         grid-area: portfolio-pa-nah;
-        width: 38.5vw;
+        width: 100vw;
         margin-left: 1.25vw;
         margin-right: 5vw;
         display: inline-block;
